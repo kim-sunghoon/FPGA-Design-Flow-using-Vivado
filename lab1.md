@@ -307,14 +307,6 @@ Observe the Tcl Console window and see the output is being displayed as the test
 <i>Resource utilization estimation summary</i>
 </p>
 
-5. In The *Flow Navigator*, under *Synthesis* (expand *Open* *Synthesized Design* if necessary), click on **Schematic** to view the synthesized design in a schematic view.
-
-   <p align="center">
-   <img src ="./images/lab1/Fig32.png">
-   </p>
-   <p align = "center">
-   <i>Synthesized design’s schematic view</i>
-   </p>
 
    Notice that IBUFs and OBUFs are automatically instantiated (added) to the design as the input and output are buffered.  The logical gates are implemented in LUTs (1 input is listed as LUT1, 2 input is listed as LUT2, and 3 input is listed as LUT3).  Four gates in RTL analysis output are mapped onto four LUTs in the synthesized output.
 
@@ -358,9 +350,18 @@ The implementation process will be run on the synthesized design.  When the proc
 <i>Selecting a net</i>
 </p>
 
-6. Close the implemented design view by selecting **File > Close Implemented Design**, and select the **Project Summary** tab (you may have to change to the Default Layout view) and observe the results.
+6. In The *Flow Navigator*, under *Implementation* (expand *Open* *Implemented Design* if necessary), click on **Schematic** to view the synthesized design in a schematic view.
 
-7. Select the Post-Implementation tab.
+   <p align="center">
+   <img src ="./images/lab1/Fig32.png">
+   </p>
+   <p align = "center">
+   <i>Implemented design’s schematic view</i>
+   </p>
+
+7. Close the implemented design view by selecting **File > Close Implemented Design**, and select the **Project Summary** tab (you may have to change to the Default Layout view) and observe the results.
+
+8. Select the Post-Implementation tab.
 
    **Notice** that the actual resource utilization is 3 LUTs and 8 IOs.  Also, it indicates that no timing constraints were defined for this design (since the design is combinatorial).
 
@@ -374,7 +375,7 @@ The implementation process will be run on the synthesized design.  When the proc
 
    Using the Windows Explorer, verify that **impl\_1** directory is created at the same level as **synth\_1** under the **lab1.runs** directory.  The **impl\_1** directory contains several files including the implementation report files.
 
-8. In Vivado, select the **Reports** tab in the bottom panel (if not visible, click *Window* in the menu bar and select **Reports**), and double-click on the *Utilization Report* entry under the *Place Design* section. The report will be displayed in the auxiliary view pane showing resource utilization.  Note that since the design is combinatorial no registers are used.
+9. In Vivado, select the **Reports** tab in the bottom panel (if not visible, click *Window* in the menu bar and select **Reports**), and double-click on the *Utilization Report* entry under the *Place Design* section. The report will be displayed in the auxiliary view pane showing resource utilization.  Note that since the design is combinatorial no registers are used.
 
 <p align="center">
 <img src ="./images/lab1/Fig38.png">
