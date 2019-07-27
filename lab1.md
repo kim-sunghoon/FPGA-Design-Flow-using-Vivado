@@ -361,8 +361,6 @@ The implementation process will be run on the synthesized design.  When the proc
 
 7. Close the implemented design view by selecting **File > Close Implemented Design**, and select the **Project Summary** tab (you may have to change to the Default Layout view) and observe the results.
 
-8. Select the Post-Implementation tab.
-
    **Notice** that the actual resource utilization is 3 LUTs and 8 IOs.  Also, it indicates that no timing constraints were defined for this design (since the design is combinatorial).
 
    <p align="center">
@@ -375,7 +373,7 @@ The implementation process will be run on the synthesized design.  When the proc
 
    Using the Windows Explorer, verify that **impl\_1** directory is created at the same level as **synth\_1** under the **lab1.runs** directory.  The **impl\_1** directory contains several files including the implementation report files.
 
-9. In Vivado, select the **Reports** tab in the bottom panel (if not visible, click *Window* in the menu bar and select **Reports**), and double-click on the *Utilization Report* entry under the *Place Design* section. The report will be displayed in the auxiliary view pane showing resource utilization.  Note that since the design is combinatorial no registers are used.
+8. In Vivado, select the **Reports** tab in the bottom panel (if not visible, click *Window* in the menu bar and select **Reports**), and double-click on the *Utilization Report* entry under the *Place Design* section. The report will be displayed in the auxiliary view pane showing resource utilization.  Note that since the design is combinatorial no registers are used.
 
 <p align="center">
 <img src ="./images/lab1/Fig38.png">
